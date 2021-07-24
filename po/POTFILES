@@ -1,0 +1,8 @@
+data/io.github.ambasta.kontol.desktop.in
+data/io.github.ambasta.kontol.appdata.xml.in
+data/io.github.ambasta.kontol.gschema.xml
+data/ui/help_overlay.ui
+data/ui/window.ui
+src/main.py
+src/window.py
+src/settings.py

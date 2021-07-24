@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=kontol
+Exec=kontol
+Icon=io.github.ambasta.kontol
+Terminal=false
+Type=Application
+Categories=GTK;GNOME;Utility;
+StartupNotify=true

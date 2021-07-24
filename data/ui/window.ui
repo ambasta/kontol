@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="4.0"/>
+  <requires lib="libadwaita" version="1.0" />
+  <template class="KontolWindow" parent="AdwApplicationWindow">
+    <property name="resizable">False</property>
+    <property name="default-width">60</property>
+    <property name="default-height">300</property>
+    <child>
+      <object class="GtkWindowHandle">
+        <object class="AdvViewStack" id="main_stack">
+          <child>
+            <object class="AdvViewStackPage">
+              <property name="name">main-screen</property>
+              <property name="child">
+                <object class="GtkBox">
+                  <property name="Orientation">vertical</property>
+                  <child>
+                    <object class="GtkHeaderBar">
+                      <style>
+                        <class name="flat"/>
+                      </style>
+                      <child>
+                        <object class="GtkMenuButton">
+                          <property name="menu-modal">menu</property>
+                          <property name="icon-name">open-menu-symbolic</property>
+                          <property name="has-frame">False</property>
+                          <property name="tooltip-text" translatable="yes">Main Menu</property>
+                          <!-- accelerator -->
+                          <style>
+                            <class name="circular"/>
+                          </style>
+                        </object>
+                      </child>
+                    </object>
+                  </child>
+                </object>
+              </property>
+            </object>
+          </child>
+        </object>
+      </object>
+    </child>
+  </template>
+  <menu id="menu">
+    <section>
+      <item>
+        <attribute name="action">app.show-about</attribute>
+        <attribute name="label" translatable="yes">About kontol</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

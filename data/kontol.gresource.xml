@@ -1,0 +1,7 @@
+<?xml vesion="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/ambasta/kontol">
+    <file preprocess="xml-stripblanks">ui/window.ui</file>
+    <file preprocess="xml-stripblanks">ui/help_overlay.ui</file>
+  </gresource>
+</gresources>
